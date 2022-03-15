@@ -1,0 +1,153 @@
+###############################################
+# Dirs & files, probably not worth a backup   #
+# (uncomment the files you don't need)        #
+###############################################
+rsync-backup/log.txt
+#.wine
+#Desktop/*
+#Downloads/*
+
+.android
+.AndroidStudioBeta
+.gradle
+.gvm
+.grails/
+.grails_history
+.local/share/notbit
+.npm
+.vagrant
+.vagrant.d
+.twister
+games
+home/lost+found
+Scribus
+twister
+
+## Game folders:
+#Steam
+#.local/share/Steam
+#.steam
+#.PlayOnLinux/ressources/*
+#.PlayOnLinux/wineprefix/*
+.minecraft
+
+########################################################
+# These directories & files may definitely be excluded #
+########################################################
+
+# Contains mounted file systems
+.gvfs
+.local/share/gvfs-metadata
+
+# Contains the actual encrypted home directory
+.Private
+
+# Cached applets
+.guayadeque/cache.db
+.icedtea
+.icedteaplugin
+.java/deployment/cache
+gnome2/epiphany/favicon_cache
+
+# Cached info about audio CDs
+.cddb
+
+# Cached packages lists
+.aptitude
+
+# Recently used files
+.recently-used
+.recently-used.xbel
+.thumb
+.thumbnails
+
+# Session-specific
+.cache
+.dbus
+.esd_auth
+.gksu.lock
+.ICEauthority
+.local/share/Trash
+.pulse
+.pulse-cookie
+.Trash
+.Xauthority
+.xsession-errors
+
+# KDE specific
+.kde/share/apps/nepomuk
+# Recent documents on KDE
+.kde/share/apps/RecentDocuments
+# Contains a history of the Klipper clipboard (KDE)
+.kde/share/apps/klipper
+# You will loose saved scrolling positions of PDFs
+.kde/share/apps/gwenview/recentfolders
+#.kde/share/apps/okular/docdata
+# Cached other users' profile pics
+.kde/share/apps/kmess/displaypics
+# Cached emoticons of others
+.kde/share/apps/kmess/customemoticons
+
+# Firefox-specific (see also Profile folder)
+.mozilla/firefox/*/Cache
+# In case Fx crashes dumps will be stored in this
+.mozilla/firefox/*/minidumps
+# Session-specific 
+.mozilla/firefox/*/.parentlock
+# Phishing database, recreated
+.mozilla/firefox/*/urlclassifier3.sqlite
+# Blacklisted extensions
+.mozilla/firefox/*/blocklist.xml
+# Extension database, recreated on startup
+.mozilla/firefox/*/extensions.cache
+.mozilla/firefox/*/extensions.ini
+.mozilla/firefox/*/extensions.rdf
+.mozilla/firefox/*/extensions.sqlite
+.mozilla/firefox/*/extensions.sqlite-journal
+
+# Cached UI data, recreated
+.mozilla/firefox/*/compreg.dat
+.mozilla/firefox/*/XPC.mfasl
+.mozilla/firefox/*/xpti.dat
+.mozilla/firefox/*/XUL.mfasl
+
+# Opera-specific
+.opera/application_cache
+.opera/cache
+.opera/icons
+.opera/lock
+.opera/opcache
+.opera/temporary_downloads
+.opera/thumbnails
+.opera/widgets/*/cache
+
+# GnuPG
+.gnupg/.#*
+.gnupg/*.lock
+.gnupg/gpg-agent-info-*
+.gnupg/random_seed
+.gnupg/rnd
+
+# Google Chrome
+.config/google-chrome/Default/Application Cache
+.config/google-chrome/Default/History Index *
+.config/google-chrome/Default/Local Storage
+.config/google-chrome/Default/Session Storage
+
+# Chromium
+.config/chromium/Default/Application Cache
+.config/chromium/Default/History Index *
+.config/chromium/Default/Local Storage
+.config/chromium/Default/Session Storage
+
+# Local repositories
+.m2/repository
+
+# Indexer
+.local/share/akonadi
+.local/share/baloo
+.local/share/zeitgeist
+
+# Other apps
+.pulse/icons
+Pidgin
