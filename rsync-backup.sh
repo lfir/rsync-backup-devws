@@ -1,18 +1,21 @@
 #!/bin/bash
 
-targets=("/home" "/etc")
-dest='/mnt/temp0'
 username='asta86'
+targets=("/mnt/h/$username" '/mnt/r/etc')
+dest='/media/ubuntu/bkp'
+logfn='log.txt'
 
 for target in "${targets[@]}"
 do
-    rsync -Aaq --human-readable --progress --delete --log-file=log.txt --exclude-from=excluded.txt \
+    rsync -Aaq --human-readable --progress --delete --log-file="$logfn" --exclude-from=excluded.txt \
     "$target" "$dest"
 done
 
-date -I > last-bk-date
-grep "rsync error" log.txt >> error-log.txt
-chown "$username" last-bk-date error-log.txt
-cp last-bk-date error-log.txt "$dest/home/$username/Devel/rsync-backup"
-rm log.txt
+lastrunfn='last-backup-date.txt'
+errlogfn='error-log.txt'
+date -I > "$lastrunfn"
+grep 'rsync error' "$logfn" >> "$errlogfn"
+chown "$username" "$lastrunfn" "$errlogfn"
+cp "$lastrunfn" "$errlogfn" "$dest/$username/Devel/rsync-backup"
+rm "$logfn"
 
