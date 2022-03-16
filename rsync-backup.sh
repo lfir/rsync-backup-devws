@@ -7,7 +7,7 @@ logfn='log.txt'
 
 for target in "${targets[@]}"
 do
-    rsync -Aaq --human-readable --progress --delete --log-file="$logfn" --exclude-from=excluded.txt \
+    rsync -Aa --human-readable --stats --delete --log-file="$logfn" --exclude-from=excluded.txt \
     "$target" "$dest"
 done
 
