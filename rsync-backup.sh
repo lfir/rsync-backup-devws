@@ -16,6 +16,6 @@ errlogfn='error-log.txt'
 date -I > "$lastrunfn"
 grep 'rsync error' "$logfn" >> "$errlogfn"
 chown "$username" "$lastrunfn" "$errlogfn"
-cp "$lastrunfn" "$errlogfn" "$dest/$username/Devel/rsync-backup"
+cp "$lastrunfn" "$errlogfn" "$dest/$username/Devel/rsync-backup-devws"
 rm "$logfn"
 
