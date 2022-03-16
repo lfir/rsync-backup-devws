@@ -2,7 +2,7 @@
 # Dirs & files, probably not worth a backup   #
 # (uncomment the files you don't need)        #
 ###############################################
-rsync-backup/log.txt
+rsync-backup-devws/log.txt
 #.wine
 #Desktop/*
 #Downloads/*
