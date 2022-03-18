@@ -5,11 +5,7 @@ targets=("/mnt/h/$username" '/mnt/r/etc')
 dest='/media/ubuntu/bkp'
 logfn='log.txt'
 
-for target in "${targets[@]}"
-do
-    rsync -Aa --human-readable --stats --delete --log-file="$logfn" --exclude-from=excluded.txt \
-    "$target" "$dest"
-done
+rsync -Aa --human-readable --stats --delete --log-file="$logfn" --exclude-from=excluded.txt "${targets[@]}" "$dest"
 
 lastrunfn='last-backup-date.txt'
 errlogfn='error-log.txt'
