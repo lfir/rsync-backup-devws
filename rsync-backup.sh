@@ -5,7 +5,7 @@ targets=("/mnt/h/$username" '/mnt/r/etc')
 dest='/media/ubuntu/bkp'
 logfn='log.txt'
 
-rsync -Aa --human-readable --stats --delete --log-file="$logfn" --exclude-from=excluded.txt "${targets[@]}" "$dest"
+rsync -Aah --info=progress2 --stats --delete --log-file="$logfn" --exclude-from=excluded.txt "${targets[@]}" "$dest"
 
 lastrunfn='last-backup-date.txt'
 errlogfn='error-log.txt'
