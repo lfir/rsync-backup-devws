@@ -4,7 +4,7 @@
 username='asta86'
 # Expected home and root mountpoints
 targets=("/mnt/h/$username" '/mnt/r/etc')
-dest='/media/ubuntu/bkp'
+dest='/media/bkp'
 logfn='log.txt'
 
 rsync -Aah --info=progress2 --stats --delete --log-file="$logfn" --exclude-from=excluded.txt "${targets[@]}" "$dest"
